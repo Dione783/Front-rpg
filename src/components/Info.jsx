@@ -7,7 +7,7 @@ export default function Info(){
     const [perso,setPerso] = useState({});
 
     useEffect(()=>{
-        fetch(`http://localhost:3000/list/${userId.id}`).then(data=>
+        fetch(`https://back-rpg-3olc.vercel.app/list/${userId.id}`).then(data=>
         data.json()).then(res=>{setPerso(res)})
     },[])
 

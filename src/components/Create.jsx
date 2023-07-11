@@ -39,7 +39,7 @@ export default function Create(){
         <div className="createContainer">
             <h1>Criar personagem</h1>
             <fieldset>
-                    <form method="POST" action="http://26.182.184.168:3000">
+                    <form method="POST" action="https://back-rpg-3olc.vercel.app">
                         <label>Nome</label><input type="text" min="3" placeholder="Nome" name="name" value={name} onChange={e=>mudarName(e)}></input>
                         <label>Descrição</label><input type="text" placeholder="Descrição" name="description" value={description} onChange={e=>mudarDescricao(e)}></input>
                         <label>Url da imagem</label><input type="text" placeholder="Url Imagem" name="url" value={url} onChange={e=>mudarUrl(e)}></input>
