@@ -21,8 +21,8 @@ export default function List(){
         }
     
     useEffect(()=>{
-        fetch("https://back-rpg-3olc.vercel.app/list").then(data=>data.json()).then(res=>setList(res))
-        fetch("https://back-rpg-3olc.vercel.app/list/vilas",{method:"GET"}).then(data=>data.json()).then(res=>{setVilas(res)})
+        fetch("http://localhost:3000/list").then(data=>data.json()).then(res=>setList(res))
+        fetch("http://localhost:3000/list/vilas",{method:"GET"}).then(data=>data.json()).then(res=>{setVilas(res)})
         console.log(vilas);
     },[])
     return (<div className="container">

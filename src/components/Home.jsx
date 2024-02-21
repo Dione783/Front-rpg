@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import Create from "./Create";
 import "./Header.css";
 
 export default function Home(){
